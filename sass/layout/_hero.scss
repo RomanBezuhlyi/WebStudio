@@ -1,22 +1,25 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  padding: 118px 0;
 
   display: flex;
   align-items: center;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero.jpg');
+    url(/images/hero/hero-desktop.jpg);
   background-size: cover;
-  max-width: 100%;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero/hero-desktop@2x.jpg);
+  }
 
   &__name {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3em;
+    font-size: 26px;
+    line-height: 1.6em;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -24,6 +27,6 @@
   }
 
   &__btn {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
