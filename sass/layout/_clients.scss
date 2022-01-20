@@ -21,6 +21,14 @@
     &:nth-child(2n) {
       margin-left: auto;
     }
+
+    &:nth-child(-n + 4) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(-n + 5) {
+      margin-bottom: 10px;
+    }
   }
 }
 
