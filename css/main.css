@@ -266,6 +266,7 @@ summary {
 ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -655,6 +656,11 @@ img {
     line-height: 1.1em;
     letter-spacing: 0.02em;
     color: #757575;
+    --timing-fuction: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-link:hover,
+.contacts-link :focus {
+    color: var(--theme-color);
   }
 
   .contacts-link:not(:last-child) {
@@ -664,14 +670,14 @@ img {
   .tablet-tell {
     width: 10px;
     height: 14px;
-    fill: #757575;
+    fill: currentColor;
     margin-right: 8px;
   }
 
   .tablet-email {
     width: 14px;
     height: 10px;
-    fill: #757575;
+    fill: currentColor;
     margin-right: 8px;
   }
 }
