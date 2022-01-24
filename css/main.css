@@ -421,11 +421,17 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
-  position: relative;
   position: fixed;
   background-color: #ffff;
   width: 100%;
-  z-index: 12;
+  z-index: 100;
+  overflow: hidden;
+  margin-top: -60px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin-top: -80px;
+  }
 }
 
 .navbar {
@@ -689,6 +695,10 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .logo-header {
+    margin-right: 93px;
+  }
+
   .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -744,6 +754,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,6 +790,7 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     height: 600px;
+    margin-top: 80px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero-tablet.jpg");
     background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet.jpg");
@@ -1580,6 +1592,7 @@ img {
 
 .portfolio {
   padding: 60px 0;
+  margin-top: 60px;
 }
 
 .filter-links {
@@ -1702,6 +1715,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .portfolio {
+    margin-top: 80px;
+  }
+
   .filter-links {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
