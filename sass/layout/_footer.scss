@@ -31,6 +31,7 @@
   line-height: 1.7em;
   letter-spacing: 0.03em;
   color: #ffffff;
+  font-style: normal;
 }
 
 .address-link {
@@ -121,6 +122,7 @@
   .address-set {
     margin-right: 70px;
     margin-bottom: 0;
+    text-align: left;
   }
   .address-item {
     margin-bottom: 9px;
@@ -128,9 +130,11 @@
 
   .footer-social {
     margin-top: 12px;
+    text-align: left;
   }
 
   .footer-mailing {
+    text-align: left;
     margin-left: auto;
     margin-top: 12px;
   }

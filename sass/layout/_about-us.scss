@@ -56,8 +56,12 @@
   }
 
   .about-us-item {
-    max-width: 354px;
-    max-height: 250px;
+    width: 354px;
+    height: 250px;
+
+    &__headline {
+      justify-content: flex-start;
+    }
 
     &:not(:last-child) {
       margin-bottom: 0;
