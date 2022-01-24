@@ -1,13 +1,10 @@
 .header {
   border-bottom: 1px solid #ececec;
   position: relative;
-}
-
-.logo-header {
-  margin-right: 88px;
-  @media screen and(min-width: 1200px) {
-    margin-right: 93px;
-  }
+  position: fixed;
+  background-color: #ffff;
+  width: 100%;
+  z-index: 12;
 }
 
 .navbar {
@@ -56,12 +53,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100vmax;
     text-align: left;
-    padding: 28px 40px 20px 40px;
+    padding: 48px 40px;
     &.is-open {
-      display: block;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
       z-index: 9;
+      flex-direction: column;
     }
   }
 
@@ -97,11 +97,6 @@
       color: var(--theme-color);
     }
   }
-
-  .contacts {
-    margin-top: 302px;
-  }
-
   .contacts-link {
     display: block;
   }
@@ -215,7 +210,7 @@
     }
   }
 
-  .contacts-link:not(:last-child) {
+  .contacts-link:first-child {
     margin-bottom: 10px;
   }
 

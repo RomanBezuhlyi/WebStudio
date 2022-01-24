@@ -422,15 +422,10 @@ img {
 .header {
   border-bottom: 1px solid #ececec;
   position: relative;
-}
-
-.logo-header {
-  margin-right: 88px;
-}
-@media screen and (min-width: 1200px) {
-  .logo-header {
-    margin-right: 93px;
-  }
+  position: fixed;
+  background-color: #ffff;
+  width: 100%;
+  z-index: 12;
 }
 
 .navbar {
@@ -487,13 +482,23 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100vmax;
     text-align: left;
-    padding: 28px 40px 20px 40px;
+    padding: 48px 40px;
   }
   .menu-container.is-open {
-    display: block;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     z-index: 9;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (min-width: 768px) {
@@ -535,10 +540,6 @@ img {
   .navigation__link:hover,
 .navigation__link :focus {
     color: var(--theme-color);
-  }
-
-  .contacts {
-    margin-top: 302px;
   }
 
   .contacts-link {
@@ -669,7 +670,7 @@ img {
     color: var(--theme-color);
   }
 
-  .contacts-link:not(:last-child) {
+  .contacts-link:first-child {
     margin-bottom: 10px;
   }
 
@@ -1132,7 +1133,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .clients {
-    padding: 60px;
+    padding: 60px 0;
     margin: 0;
   }
 
